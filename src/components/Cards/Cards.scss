@@ -1,0 +1,19 @@
+@import "../../assets/styles/main.scss";
+
+.cards {
+  &__wrap-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto 20px;
+    max-width: 900px;
+  }
+
+  &__list {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+  }
+}

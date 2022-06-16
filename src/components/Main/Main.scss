@@ -1,0 +1,29 @@
+@import "../../assets/styles/main.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 110px);
+  margin: 20px 30px 20px;
+  overflow-y: hidden;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  &_empty {
+    align-items: center;
+    height: calc(100% - 110px);
+  }
+
+  &__title {
+    @include title;
+    text-align: center;
+  }
+
+  &__wrap-btn {
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

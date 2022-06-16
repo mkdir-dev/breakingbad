@@ -1,0 +1,66 @@
+@import "../../../assets/styles/main.scss";
+
+.card {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: $black;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  &__title {
+    @include subtitle;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__text {
+    @include mainText;
+    display: flex;
+    flex-direction: row;
+  } 
+
+  &__btn {
+    width: 19px;
+    height: 19px;
+    margin: 0 10px 0;
+    padding: 0;
+    border: none;
+    background-size: contain;
+    background-color: transparent;
+    cursor: pointer;
+
+    &_minus {
+      background-image: url(../../../assets/images/minus.png);
+    }
+
+    &_plus {
+      background-image: url(../../../assets/images/plus.png);
+    }
+
+    &_disabled {
+      opacity: 0.2;
+      cursor: default;
+    }
+  }
+
+  &__btn-delete {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-image: url(../../../assets/images/close.png);
+    background-size: contain;
+    background-color: transparent;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}

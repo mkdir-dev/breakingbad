@@ -1,0 +1,10 @@
+@import "../../assets/styles/main.scss";
+
+.header {
+  &__title {
+    @include title;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+  }
+}

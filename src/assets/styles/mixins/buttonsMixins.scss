@@ -1,0 +1,42 @@
+@mixin mainBtn {
+  @include mainText;
+  width: 100%;
+  max-width: 420px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 11px 0px;
+  border-radius: 6px;
+  border: none;
+  color: $white;
+  background-color: $skyBlue;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+  &:hover {
+    box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.5), 0px 4px 16px rgba(0, 140, 255, 0.4);
+  }
+
+  &:focus {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12), 0px 4px 16px rgba(0, 140, 255, 0.4);
+  }
+
+  &:active {
+    box-shadow: inset 4px -4px 4px rgba(255, 255, 255, 0.5), inset -4px 4px 4px rgba(255, 255, 255, 0.5);
+
+    &:focus {
+      box-shadow: inset 4px -4px 4px rgba(255, 255, 255, 0.5), inset -4px 4px 4px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &_disabled {
+    @include mainText;
+    max-width: 420px;
+    width: 100%;
+    margin: 10px;
+    padding: 11px 49px;
+    border-radius: 6px;
+    border: none;
+    color: $skyBlue;
+    background-color: $lightBlue;
+  }
+}
